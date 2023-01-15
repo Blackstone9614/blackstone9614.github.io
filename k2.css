@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  height: 160px;
+  height: 10%;
 }
 
 .menu {
@@ -65,4 +65,11 @@ body {
   font-family: 'Kosugi Maru', sans-serif;
   margin: 10px;
   color: #444;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
 }
