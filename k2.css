@@ -1,11 +1,20 @@
 @charset "utf-8";
-html * {}
-body {
-  margin: 0; 
+html {
+  width: 70%;
+	display: inline-block;
+	vertical-align: top;
+  margin: 0;
+  background: #aaa;
+}
+
+.body {
+  border: #ddd solid 3px;
+  align-items:center;
+  justify-content:center;
 }
 
 .header {
-  height: 10%;
+  height:auto;
 }
 
 .menu {
@@ -14,7 +23,8 @@ body {
 
 .content{
   background: #D2F4D2;
-  height:1000px;
+  padding: 10px;
+  height:auto;
 }
 
 .menu ul {
@@ -67,9 +77,9 @@ body {
   color: #444;
 }
 
-@media screen and (max-width: 959px) {
-	/* 959px以下に適用されるCSS（タブレット用） */
-}
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
+  body {
+    width:auto;
+  }
 }
